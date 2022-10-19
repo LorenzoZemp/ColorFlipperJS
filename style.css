@@ -24,6 +24,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 2%;
+  background-color: white;
 }
 
 ul {
@@ -64,6 +65,22 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   margin: 1rem 0 1rem 0;
+  border: 0;
+  border-radius: 8px;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(231, 231, 231);
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: rgb(211, 211, 211);
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .container {
@@ -74,4 +91,13 @@ main {
 
 main h2 {
   font-size: 2rem;
+}
+
+.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
